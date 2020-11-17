@@ -1,0 +1,109 @@
+﻿[
+  {
+    "parentCompany": "General Motors Company",
+    "company": "Buick",
+    "info": "Founded in 1899 as 'Buick Auto-Vim and Power Company'. Formed General Motors in 1908."
+  },
+  {
+    "parentCompany": "General Motors Company",
+    "company": "Cadillac",
+    "info": "Founded as Henry Ford Company in 1901. Renamed to Cadillac in 1902. Acquired by General Motors in 1909."
+  },
+  {
+    "parentCompany": "General Motors Company",
+    "company": "Chevrolet",
+    "info": "Founded in 1911. Acquired by General Motors in 1918."
+  },
+  {
+    "parentCompany": "General Motors Company",
+    "company": "GMC",
+    "info": " Formed as General Motors Truck Company (GMTC) in 1911 after merging Rapid Motor Vehicle co. and Reliance Motor Truck co."
+  },
+  {
+    "parentCompany": "Fiat Chrysler Automobiles",
+    "company": "Chrysler",
+    "info": "Formed in 1925 as the founding brand of Chrysler Corporation (the predecessor to Fiat Chrysler Automobiles)."
+  },
+  {
+    "parentCompany": "Fiat Chrysler Automobiles",
+    "company": "Dodge",
+    "info": "Formed in 1914. Acquired by Chrysler in 1928."
+  },
+  {
+    "parentCompany": "Fiat Chrysler Automobiles",
+    "company": "Jeep",
+    "info": "Formed by Willys-Overland in 1941. Merged with Kaiser Motors in 1953. Acquired by AMC in 1970. Acquired by Chrysler in 1987."
+  },
+  {
+    "parentCompany": "Fiat Chrysler Automobiles",
+    "company": "RAM",
+    "info": "Formed in 2009 during a restructure of Chrysler's truck brands."
+  },
+  {
+    "parentCompany": "Ford Motor Company",
+    "company": "Ford",
+    "info": "Founded in 1903."
+  },
+  {
+    "parentCompany": "Ford Motor Company",
+    "company": "Lincoln",
+    "info": "Founded in 1917. Acquired by Ford Motor Company in 1922."
+  },
+  {
+    "company": "Anteros Coachworks",
+    "info": "Formed in 2005."
+  },
+  {
+    "company": "Callaway Cars",
+    "info": "Formed in 1977."
+  },
+  {
+    "company": "Drako Motors",
+    "info": "Formed in 2020)"
+  },
+  {
+    "company": "Equus Automotive",
+    "info": "Formed in 2013."
+  },
+  {
+    "company": "Falcon Motorsports",
+    "info": "Formed in 2009."
+  },
+  {
+    "company": "Hennessey Special Vehicles",
+    "info": "Formed in 2017."
+  },
+  {
+    "company": "Karma Automotive",
+    "info": "Formed in 2016."
+  },
+  {
+    "company": "Local Motors",
+    "info": "Formed in 2007."
+  },
+  {
+    "company": "Lordstown Motors",
+    "info": "Formed in 2019."
+  },
+  {
+    "company": "Lucid Motors",
+    "info": "Formed in 2007."
+  },
+  {
+    "company": "Nikola Corporation",
+    "info": "Formed in 2014."
+  },
+  {
+    "company": "Panoz",
+    "info": "Formed in 1989."
+  },
+  {
+    "company": "Rivian",
+    "info": "Formed in 2009."
+  },
+  {
+    "company": "Rossion-Mosler Automotive",
+    "info": "Formed in 1985."
+  }
+]
+
