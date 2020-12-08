@@ -3,5 +3,5 @@ export default interface ManufacturerModel {
     company: string;
     info: string;
     color: string;
-    percentComplete: number;
+    percentElectrified: number;
 }

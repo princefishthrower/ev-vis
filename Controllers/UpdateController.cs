@@ -9,16 +9,16 @@ namespace ev_vis.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ManufacturerController
+    public class UpdateController
     {
         [HttpGet]
-        public IEnumerable<ManufacturerModel> Get()
+        public IEnumerable<UpdateModel> Get()
         {
             var physicalProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory());
-            using (var reader = new StreamReader(Path.Combine(physicalProvider.Root, "App_Data", "manufacturers.json")))
+            using (var reader = new StreamReader(Path.Combine(physicalProvider.Root, "App_Data", "updates.json")))
             {
                 var content = reader.ReadToEnd();
-                return JsonConvert.DeserializeObject<List<ManufacturerModel>>(content);
+                return JsonConvert.DeserializeObject<List<UpdateModel>>(content);
             }
         }
     }

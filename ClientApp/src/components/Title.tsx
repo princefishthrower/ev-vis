@@ -5,7 +5,7 @@ import Tesseract from "tesseract.js";
 
 export interface ITitleProps {}
 
-const months = new Array();
+const months: Array<string> = [];
 months[0] = "January";
 months[1] = "February";
 months[2] = "March";
@@ -25,7 +25,6 @@ export function Title(props: ITitleProps) {
   const fetchText = async () => {
     const response = await Tesseract.recognize("images/ppm-0400.png", "eng");
     setPPM(response.data.words[1].text.replace("L", "").replace("-", "."));
-    console.log(response.data.words[1].text.replace("L", "").replace("-", "."));
   };
 
   useEffect(() => {
@@ -34,17 +33,21 @@ export function Title(props: ITitleProps) {
 
   const year = new Date().getFullYear();
   const month = months[new Date().getMonth()];
+
   return (
     <div className="text-center">
       <h1>Electric Vehicle Tracker</h1>
-      <h2>
-        It's {month} {year}. The current average CO2 PPM on planet earth is{" "}
+      <p>
+        It's {month} {year}.
+      </p>
+      <p>
+        The current average CO2 PPM on planet earth is{" "}
         {ppm === "" ? "loading..." : ppm}.
-      </h2>
-      <h4>
+      </p>
+      <p>
         These are the planet's automobile manufacturers, and the progress of
         their migration to full EV fleets.
-      </h4>
+      </p>
     </div>
   );
 }

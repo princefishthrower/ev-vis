@@ -2,7 +2,7 @@
   "name": "ev_vis",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://localhost:5001",
+  "homepage": "https://chrisfrew.in/ev-tracker",
   "dependencies": {
     "@types/react-dom": "^16.9.9",
     "bootstrap": "^4.1.3",

@@ -1,39 +1,33 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { useTransition, animated } from 'react-spring'
+import { genericSort } from '../helpers/genericSort';
 import IFilterValues from '../models/IFilterValues';
 import ManufacturerModel from '../models/ManufacturerModel'
-import { Loader } from './Loader';
+
+const tileOffset = 50;
+const tileHeight = 150;
 
 interface IListProps {
+  manufacturers: Array<ManufacturerModel>;
   filterValues: IFilterValues;
+  isDescending: boolean;
 }
 export function List (props: IListProps) {
-  const { filterValues } = props;
+  const { manufacturers, filterValues, isDescending } = props;
   const { minValue, maxValue } = filterValues;
-  const [manufacturers, setManufacturers] = useState<Array<ManufacturerModel>>([]);
 
-  useEffect(() => {
-    if (manufacturers.length === 0) {
-      fetchManufacturers();
-    }
-  })
+  const sortedManufacturers = manufacturers.sort((a,b) => genericSort(a, b, {property: "percentElectrified", isDescending: isDescending}))
 
-  const fetchManufacturers = async () => {
-    const response = await fetch('/api/manufacturer');
-    const json = await response.json();
-    setManufacturers(json);
-  }
-
-  const filteredManufacturers = manufacturers.filter(manufacturer => {
+  const filteredManufacturers = sortedManufacturers.filter(manufacturer => {
     if (minValue === -1 && maxValue === -1) {
       return true;
     } else {
-      return manufacturer.percentComplete > minValue && manufacturer.percentComplete < maxValue;
+      return manufacturer.percentElectrified >= minValue && manufacturer.percentElectrified <= maxValue;
     }
-  });
+  }); 
 
   const transitions = useTransition(
-    filteredManufacturers.map((data, index) => ({ ...data, top: index*50 })),
+    filteredManufacturers.map((data, index) => ({ ...data, top: index*tileOffset })),
     d => d.company,
     {
       from: { opacity: 0 },
@@ -43,26 +37,20 @@ export function List (props: IListProps) {
     }
   )
 
-  if (manufacturers.length === 0 ) {
-    return (
-      <Loader/>
-    )
-  }
-
   if (filteredManufacturers.length === 0 ) {
     return (
-      <p>No manufacturers match the filter you selected</p>
+      <p className="text-center my-5">No manufacturers match the filter you selected.</p>
     )
   }
 
   return (
-    <div className="list">
+    <div className="list" style={{height: filteredManufacturers.length*(tileHeight + tileOffset)}}>
       {transitions.map(({ item, props: { top, ...rest }, key }, index) => (
         <animated.div
           key={key}
-          style={{ zIndex: manufacturers.length - index, transform: top?.interpolate(top => `translate3d(0,${top}px,0)`), ...rest }}>
+          style={{ zIndex: manufacturers.length - index, height: tileHeight, transform: top?.interpolate(top => `translate3d(0,${top}px,0)`), ...rest }}>
           <div className="cell">
-            <div className="details p-3" style={{ backgroundImage: `linear-gradient(135deg, ${item.color} 0%, #ffffff ${100 - item.percentComplete}%)` }}>
+            <div className="details p-3" style={{ backgroundImage: `linear-gradient(135deg, ${item.color} 0%, #ffffff ${100 - item.percentElectrified}%)` }}>
               <h5>{item.company}</h5>
               <p>{item.info}</p>
             </div>

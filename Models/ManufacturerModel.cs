@@ -8,5 +8,7 @@ namespace ev_vis.Models
         public string Company { get; set; }
 
         public string Info { get; set; }
+
+        public int PercentElectrified { get; set; }
     }
 }

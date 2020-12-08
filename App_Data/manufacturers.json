@@ -2,108 +2,137 @@
   {
     "parentCompany": "General Motors Company",
     "company": "Buick",
-    "info": "Founded in 1899 as 'Buick Auto-Vim and Power Company'. Formed General Motors in 1908."
+    "info": "Founded in 1899 as 'Buick Auto-Vim and Power Company'. Formed General Motors in 1908.",
+    "percentElectrified": 0
   },
   {
     "parentCompany": "General Motors Company",
     "company": "Cadillac",
-    "info": "Founded as Henry Ford Company in 1901. Renamed to Cadillac in 1902. Acquired by General Motors in 1909."
+    "info": "Founded as Henry Ford Company in 1901. Renamed to Cadillac in 1902. Acquired by General Motors in 1909.",
+    "percentElectrified": 0
   },
   {
     "parentCompany": "General Motors Company",
     "company": "Chevrolet",
-    "info": "Founded in 1911. Acquired by General Motors in 1918."
+    "info": "Founded in 1911. Acquired by General Motors in 1918.",
+    "percentElectrified": 0
   },
   {
     "parentCompany": "General Motors Company",
     "company": "GMC",
-    "info": " Formed as General Motors Truck Company (GMTC) in 1911 after merging Rapid Motor Vehicle co. and Reliance Motor Truck co."
+    "info": " Formed as General Motors Truck Company (GMTC) in 1911 after merging Rapid Motor Vehicle co. and Reliance Motor Truck co.",
+    "percentElectrified": 0
   },
   {
     "parentCompany": "Fiat Chrysler Automobiles",
     "company": "Chrysler",
-    "info": "Formed in 1925 as the founding brand of Chrysler Corporation (the predecessor to Fiat Chrysler Automobiles)."
+    "info": "Formed in 1925 as the founding brand of Chrysler Corporation (the predecessor to Fiat Chrysler Automobiles).",
+    "percentElectrified": 0
   },
   {
     "parentCompany": "Fiat Chrysler Automobiles",
     "company": "Dodge",
-    "info": "Formed in 1914. Acquired by Chrysler in 1928."
+    "info": "Formed in 1914. Acquired by Chrysler in 1928.",
+    "percentElectrified": 0
   },
   {
     "parentCompany": "Fiat Chrysler Automobiles",
     "company": "Jeep",
-    "info": "Formed by Willys-Overland in 1941. Merged with Kaiser Motors in 1953. Acquired by AMC in 1970. Acquired by Chrysler in 1987."
+    "info": "Formed by Willys-Overland in 1941. Merged with Kaiser Motors in 1953. Acquired by AMC in 1970. Acquired by Chrysler in 1987.",
+    "percentElectrified": 0
   },
   {
     "parentCompany": "Fiat Chrysler Automobiles",
     "company": "RAM",
-    "info": "Formed in 2009 during a restructure of Chrysler's truck brands."
+    "info": "Formed in 2009 during a restructure of Chrysler's truck brands.",
+    "percentElectrified": 0
   },
   {
     "parentCompany": "Ford Motor Company",
     "company": "Ford",
-    "info": "Founded in 1903."
+    "info": "Founded in 1903.",
+    "percentElectrified": 0
   },
   {
     "parentCompany": "Ford Motor Company",
     "company": "Lincoln",
-    "info": "Founded in 1917. Acquired by Ford Motor Company in 1922."
+    "info": "Founded in 1917. Acquired by Ford Motor Company in 1922.",
+    "percentElectrified": 0
   },
   {
     "company": "Anteros Coachworks",
-    "info": "Formed in 2005."
+    "info": "Formed in 2005.",
+    "percentElectrified": 0
   },
   {
     "company": "Callaway Cars",
-    "info": "Formed in 1977."
+    "info": "Formed in 1977.",
+    "percentElectrified": 0
   },
   {
     "company": "Drako Motors",
-    "info": "Formed in 2020)"
+    "info": "Formed in 2020)",
+    "percentElectrified": 0
   },
   {
     "company": "Equus Automotive",
-    "info": "Formed in 2013."
+    "info": "Formed in 2013.",
+    "percentElectrified": 0
   },
   {
     "company": "Falcon Motorsports",
-    "info": "Formed in 2009."
+    "info": "Formed in 2009.",
+    "percentElectrified": 0
   },
   {
     "company": "Hennessey Special Vehicles",
-    "info": "Formed in 2017."
+    "info": "Formed in 2017.",
+    "percentElectrified": 0
   },
   {
     "company": "Karma Automotive",
-    "info": "Formed in 2016."
+    "info": "Formed in 2016.",
+    "percentElectrified": 0
   },
   {
     "company": "Local Motors",
-    "info": "Formed in 2007."
+    "info": "Formed in 2007.",
+    "percentElectrified": 0
   },
   {
     "company": "Lordstown Motors",
-    "info": "Formed in 2019."
+    "info": "Formed in 2019.",
+    "percentElectrified": 100
   },
   {
     "company": "Lucid Motors",
-    "info": "Formed in 2007."
+    "info": "Formed in 2007.",
+    "percentElectrified": 0
   },
   {
     "company": "Nikola Corporation",
-    "info": "Formed in 2014."
+    "info": "Formed in 2014.",
+    "percentElectrified": 0
   },
   {
     "company": "Panoz",
-    "info": "Formed in 1989."
+    "info": "Formed in 1989.",
+    "percentElectrified": 0
   },
   {
     "company": "Rivian",
-    "info": "Formed in 2009."
+    "info": "Formed in 2009.",
+    "percentElectrified": 0
   },
   {
     "company": "Rossion-Mosler Automotive",
-    "info": "Formed in 1985."
+    "info": "Formed in 1985.",
+    "percentElectrified": 0
+  },
+  {
+    "company": "Tesla",
+    "info": "Formed in 2003.",
+    "percentElectrified": 100
   }
 ]
 
